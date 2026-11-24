@@ -1,4 +1,4 @@
-# PawPrint Light Controller
+# DG-LAB 爪印燈控制器
 
 [English](README.md) · [MIT 授權](LICENSE)
 
