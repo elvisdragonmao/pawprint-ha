@@ -1,0 +1,21 @@
+name: Tests
+
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Run tests with Home Assistant Core 2026.10.1
+        run: |
+          docker run --rm --entrypoint python \
+            --volume "$PWD:/workspace:ro" --workdir /workspace \
+            --env PYTHONDONTWRITEBYTECODE=1 \
+            ghcr.io/home-assistant/home-assistant:2026.10.1 -m unittest -v

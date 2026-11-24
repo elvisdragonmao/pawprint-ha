@@ -1,0 +1,15 @@
+pawprint_light:
+  light: light.example_lamp
+  # address: "AA:BB:CC:DD:EE:FF"
+  axis: x
+  left: -60
+  right: 60
+  hold_seconds: 0.5
+  motion_threshold: 12
+  speed_threshold: 35
+  debug: true
+  dry_run: true
+
+logger:
+  logs:
+    custom_components.pawprint_light: debug

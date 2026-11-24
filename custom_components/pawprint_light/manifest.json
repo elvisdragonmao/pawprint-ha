@@ -1,0 +1,12 @@
+{
+    "domain": "pawprint_light",
+    "name": "PawPrint Light Controller",
+    "version": "0.1.0",
+    "documentation": "https://github.com/dungeonlab-open/dglab-bluetooth-protocol/blob/main/paw-prints/README.md",
+    "dependencies": [
+        "bluetooth",
+        "light"
+    ],
+    "codeowners": [],
+    "iot_class": "local_push"
+}
